@@ -9,6 +9,6 @@ def view_books(all_books):
             print(f"Published Year: {book['year']}")
             print(f"Quantity: {book['quantity']}")
             print(f"ISBN No: {book['isbn']}")
-            print(f"Book Added At: {book['bookAddedAt']}")
+            print(f"Book Added At: {book['bookAddedAt']}\n")
     else:
         print("No book found in the library!")
