@@ -4,8 +4,17 @@
         "author": "Ami",
         "year": "2022",
         "price": "250",
-        "quantity": "5",
+        "quantity": 5,
         "isbn": 11007,
         "bookAddedAt": "13/12/2024 22:47:23"
+    },
+    {
+        "title": "New Book",
+        "author": "AN",
+        "year": 2023,
+        "price": 120,
+        "quantity": 5,
+        "isbn": 78091,
+        "bookAddedAt": "13/12/2024 23:01:17"
     }
 ]

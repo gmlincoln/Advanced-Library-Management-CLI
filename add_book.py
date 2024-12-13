@@ -8,10 +8,16 @@ def add_books(all_books):
     author = input("Enter author name: ")     
     published_year = int(input("Enter published year: "))
     price = int(input("Enter book price: "))    
-    quantity = int(input("Enter book quantity: ") ) 
     isbn =  randint(10000, 99999)
     bookAddedAt = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
     
+    while True:
+        try:
+            quantity = int(input("Enter book quantity: ") )
+            break
+        except ValueError:
+            print("Invalid! Please enter a valid integer.") 
+            
 
     book = {
         "title": title,
