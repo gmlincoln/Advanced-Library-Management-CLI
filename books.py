@@ -1,5 +1,5 @@
 from add_book import add_books
-
+from view_all_book import view_books
 all_books = []
 
 while True:
@@ -19,7 +19,7 @@ while True:
     elif choice == '1':
         all_books = add_books(all_books)
     elif choice == '2':
-        print("View all books")
+        view_books(all_books)
     elif choice == '3':
         print("Update Book")
     elif choice == '4':
@@ -27,4 +27,4 @@ while True:
     elif choice == '5':
         print("Lend Book")
     else:
-        print("Invalid Choice! Choose a valid option. ")    
+        print("Invalid choice! Please try again.\n")    
