@@ -1,4 +1,6 @@
 from save_all_book import save_all_books
+from datetime import datetime
+
 
 def update_book(all_books):
     
@@ -16,12 +18,15 @@ def update_book(all_books):
             published_year = int(input("Enter published year: "))
             price = input("Enter book price: ")    
             quantity = input("Enter book quantity: ")
+            bookUpdatedAt = datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+            
             
             book['title'] = title
             book['author'] = author
             book['year'] = published_year
             book['price'] = price
             book['quantity'] = quantity
+            book['bookAddedAt'] = bookUpdatedAt
             
             save_all_books(all_books)
             print("Book updated successfully!")

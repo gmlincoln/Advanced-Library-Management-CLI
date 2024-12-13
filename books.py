@@ -2,13 +2,12 @@ from add_book import add_books
 from view_all_book import view_books
 from restore_book import restore_all_books
 from update_book import update_book
+from delete_book import delete_book
 
 all_books = []
 
-
-
 while True:
-    print("Welcome to Advance Library Management")
+    print("===Advance Library Management===")
     print("0. Exit")
     print("1. Add Book")
     print("2. View All Books")
@@ -33,7 +32,7 @@ while True:
         update_book(all_books)
         
     elif choice == '4':
-        print("Delete Book")
+        delete_book(all_books)
         
     elif choice == '5':
         print("Lend Book")
